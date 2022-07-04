@@ -1,9 +1,9 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import { trpc } from "../utils/trpc";
+import type { NextPage } from "next"
+import Head from "next/head"
+import { trpc } from "../utils/trpc"
 
 const Home: NextPage = () => {
-  const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
+  const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }])
 
   return (
     <>
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="container flex flex-col items-center justify-center min-h-screen p-10 px-0 mx-auto md:py-20 md:p-10 md:px-0">
-        <h1 className="font-extrabold text-center text-7xl">
+        <h1 className="font-extrabold text-center text-7xl font-virgil">
           Create <span className="text-blue-500">T3</span> App
         </h1>
 
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <section className="h-full max-h-72 transform group border-2 border-neutral-800 rounded-2xl duration-300 hover:scale-105 hover:border-blue-600 hover:-translate-y-1 hover:shadow-2xl">
             <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
               <div className="p-5 py-10 flex flex-col justify-center h-full text-center">
-                <h2 className="mb-5 text-3xl">NextJS</h2>
+                <h2 className="mb-5 text-3xl font-virgil">NextJS</h2>
                 <p className="mb-5">The React framework for production</p>
                 <button className="p-2 px-6 w-fit self-center text-white font-bold bg-blue-500 rounded-full group-hover:bg-blue-600 duration-300">
                   Documentation
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
               rel="noreferrer"
             >
               <div className="p-5 py-10 flex flex-col justify-center h-full text-center">
-                <h2 className="mb-5 text-3xl">TypeScript</h2>
+                <h2 className="mb-5 text-3xl font-virgil">TypeScript</h2>
                 <p className="mb-5">
                   Strongly typed programming language that builds on JavaScript,
                   giving you better tooling at any scale
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
           <section className="h-full max-h-72 transform group border-2 border-neutral-800 rounded-2xl duration-300 hover:scale-105 hover:border-blue-600 hover:-translate-y-1 hover:shadow-2xl">
             <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
               <div className="p-5 py-10 flex flex-col justify-center h-full text-center">
-                <h2 className="mb-5 text-3xl">TailwindCSS</h2>
+                <h2 className="mb-5 text-3xl font-virgil">TailwindCSS</h2>
                 <p className="mb-5">
                   Rapidly build modern websites without ever leaving your HTML
                 </p>
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
           <section className="h-full max-h-72 transform group border-2 border-neutral-800 rounded-2xl duration-300 hover:scale-105 hover:border-blue-600 hover:-translate-y-1 hover:shadow-2xl">
             <a href="https://trpc.io/" target="_blank" rel="noreferrer">
               <div className="p-5 py-10 flex flex-col justify-center h-full text-center">
-                <h2 className="mb-5 text-3xl">tRPC</h2>
+                <h2 className="mb-5 text-3xl font-virgil">tRPC</h2>
                 <p className="mb-5">End-to-end typesafe APIs made easy</p>
                 <button className="p-2 px-6 w-fit self-center text-white font-bold bg-blue-500 rounded-full group-hover:bg-blue-600 duration-300">
                   Documentation
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

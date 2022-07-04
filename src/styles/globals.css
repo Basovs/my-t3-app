@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Virgil";
+    src: local("Virgil"), local("Virgil"),
+      url("/fonts/Virgil.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+}
